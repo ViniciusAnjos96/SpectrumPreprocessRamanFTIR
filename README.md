@@ -3,6 +3,7 @@
 This script was developed for the spectral analysis of FTIR (Fourier-transform infrared spectroscopy) and Raman data.
 
 ======== LICENSE
+
 Copyright © 2026 Vinicius Anjos.
 
 All rights reserved.
