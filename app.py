@@ -228,7 +228,7 @@ st.markdown("<h1 style='text-align: center;'>Vibrational Spectroscopy Preprocess
 st.markdown("<p style='text-align: center;'>v. 1.0, 2026.</p>", unsafe_allow_html=True)
 
 # Header image (fetching from Google Drive URL)
-google_drive_file_id = "1cNeeyMGoNRvnWDWd3oi96LQy3d9Ue-RB"
+google_drive_file_id = "1l0DJmPOvyaAitRs7xdIdJHremEtHud0r"
 direct_download_url = f"https://drive.google.com/uc?export=download&id={google_drive_file_id}"
 
 try:
