@@ -1,4 +1,4 @@
-""" FTIR and Raman Spectral Preprocessing with Python (Google Colab) Last updated: Feb 08, 2026.
+""" FTIR and Raman Spectral Preprocessing with Python (Google Colab) Last updated: Feb 18, 2026.
 
 This script was developed for the spectral analysis of FTIR (Fourier-transform infrared spectroscopy) and Raman data.
 
