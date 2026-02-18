@@ -4,7 +4,7 @@ This script was developed for the spectral analysis of FTIR (Fourier-transform i
 
 ======== LICENSE
 
-Copyright © 2026 Vinicius Anjos.
+Copyright © 2026 Vinicius Anjos and Denise Zezell.
 
 All rights reserved.
 
