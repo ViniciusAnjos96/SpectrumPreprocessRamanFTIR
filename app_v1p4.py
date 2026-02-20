@@ -516,10 +516,21 @@ if st.session_state.wavenumbers is not None and st.session_state.spectra_data is
             go_back_st()
     with col_save:
         if st.session_state.history and st.session_state.current_index < len(st.session_state.history) and st.session_state.history[st.session_state.current_index]["wavenumbers"] is not None:
-            output_df_content = pd.DataFrame(
-                st.session_state.history[st.session_state.current_index]["spectra"],
-                columns=st.session_state.history[st.session_state.current_index]["wavenumbers"]
-            ).to_csv(index=False, header=False).encode('utf-8') # Added header=False
+            # Get current wavenumbers and spectra
+            current_wn = st.session_state.history[st.session_state.current_index]["wavenumbers"]
+            current_sp = st.session_state.history[st.session_state.current_index]["spectra"]
+
+            # Create a DataFrame with wavenumbers as the first row and spectra data following
+            # Convert wavenumbers to a list of lists for a single row DataFrame
+            wavenumber_row_df = pd.DataFrame([current_wn])
+            # Convert spectra to a DataFrame
+            spectra_df = pd.DataFrame(current_sp)
+            # Concatenate them vertically
+            combined_df = pd.concat([wavenumber_row_df, spectra_df], ignore_index=True)
+
+            # Save to CSV without a header (as the first row of data is now the wavenumbers)
+            output_df_content = combined_df.to_csv(index=False, header=False).encode('utf-8')
+
             st.download_button(
                 label="💾 Save result",
                 data=output_df_content,
