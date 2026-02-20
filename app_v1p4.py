@@ -333,6 +333,7 @@ st.markdown("""
     <li>The input file must be in .csv format.</li>
     <li>Each row should represent an individual spectrum.</li>
     <li>The first row must contain the wavenumber values.</li>
+    <li>Spectra only, without labels/categories.</li>
 </ul>
 <p>Make sure your file follows this format to ensure proper functioning of the script.</p>
 <p><b>LICENSE</b></p>
