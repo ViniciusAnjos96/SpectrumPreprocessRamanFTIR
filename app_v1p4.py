@@ -328,6 +328,9 @@ except requests.exceptions.RequestException as e:
 
 st.markdown("""
 <p><b>This software was developed for the spectral preprocess of Raman and FTIR spectroscopy data.</b></p>
+<p><b>CITATION</b></p>
+<p>If you use Vibrational Spectroscopy Preprocess in your research, please cite:.</p>
+<p>Anjos, V. P., Zezell. D. M. (2026). Vibrational Spectroscopy Preprocess (Version 1.4) [Software]. Zenodo. https://doi.org/10.5281/zenodo.20496559</p>
 <p><b>DATA FORMAT REQUIRED</b></p>
 <ul>
     <li>The input file must be in .csv format.</li>
